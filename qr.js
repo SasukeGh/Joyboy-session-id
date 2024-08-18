@@ -56,16 +56,16 @@ router.get('/', async (req, res) => {
 					let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
 					await delay(800);
 				   let b64data = Buffer.from(data).toString('base64');
-				   let session = await Qr_Code_By_Maher_Zubair.sendMessage(Qr_Code_By_Maher_Zubair.user.id, { text: 'MIRAGE MD V2.5.2-BOT;;;' + b64data });
+				   let session = await Qr_Code_By_Maher_Zubair.sendMessage(Qr_Code_By_Maher_Zubair.user.id, { text: 'SASUKE MD V1.0.0-BOT;;;' + b64data });
 	
 				   let SIGMA_MD_TEXT = `
-━━━━━━━━━━━❀˖°❀˖°❀˖°┗━━━━━━━━━━━             
-||*_🦁 hello guys this is youre session id_*
-||*_🦁 you will need it to upload on all bots of Mirage md v1.5.2_*
-||*_🦁 currently working on Lazack-md_*
-||*_🦁 join all of whatsapp group for our updates daily_*
-||   |❀˖|*group* : https://chat.whatsapp.com/GRK2A2O6kNYII4g6oVHlOh
-||*_Don't Forget To Give Star To My Repo_*`
+━━━━━━━━━━■《SASUKE-MD》■━━━━━━━━━━━             
+||*_Hello user, this is your session id_*
+||*_You will need it to activate Sasuke MD v1.0.0_*
+||*_Keep it safe_*
+||*_ Join the whatsapp group for info and updates_*
+||   |■《》■|*group* : https://chat.whatsapp.com/CsgxycgRnUmA3KwnbiIF7s
+||*_Don't Forget To Star My Github Repo_*`
 	 await Qr_Code_By_Maher_Zubair.sendMessage(Qr_Code_By_Maher_Zubair.user.id,{text:SIGMA_MD_TEXT},{quoted:session})
 
 
